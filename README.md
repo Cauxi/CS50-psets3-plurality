@@ -1,1 +1,10 @@
-# CS50-psets3-plurality
+# psets3-plurality
+<strong>NOTE</strong>: Copying this data and using it for your submission will breach the academic honesty policy of CS50. Please make sure to understand the material and solve the problem yourself—it's worth it!
+
+<p>This is my solution to the CS50 "Plurality" problem set, implemented in C. You can find the full problem description <a href="https://cs50.harvard.edu/x/2024/psets/3/plurality/">here</a>.</p>
+Problem Overview
+<p>In this problem set, I implemented a program that runs a simple plurality election. The program allows voters to cast votes for candidates and then determines the winner(s) based on who received the most votes. If there’s a tie, it prints all candidates with the highest number of votes.</p> <p>This solution was completed as part of <strong>CS50: Introduction to Computer Science</strong>. Uploading my solution to GitHub complies with CS50’s academic honesty policy. For additional insights, you can refer to this <a href="https://www.reddit.com/r/cs50/comments/63235w/is_this_reasonable/">Reddit discussion</a>.</p>
+Program Structure
+<ul> <li><strong>Input</strong>: The program takes the names of candidates as command-line arguments and then allows voters to vote for a candidate by typing their name.</li> <li><strong>Vote Counting</strong>: The program tracks votes and updates the count for each candidate.</li> <li><strong>Winner Determination</strong>: It determines the candidate(s) with the highest vote count and prints their names as the winner(s).</li> </ul>
+Key Steps:
+<ol> <li><strong>Command-line Input</strong>: The program accepts command-line arguments representing the candidates' names.</li> <li><strong>Vote Function</strong>: The `vote` function is called every time a voter casts a vote. It checks whether the voted name is valid and updates the candidate’s vote count if it is.</li> <li><strong>Print Winner Function</strong>: After all votes are cast, the `print_winner` function determines who has the most votes and prints the winner. In case of a tie, it prints all candidates with the highest vote count.</li> <li><strong>Vote Validation</strong>: The program checks if the voted candidate exists and rejects invalid votes.</li> </ol> <p>Note: This repository does not include any files provided by CS50, such as the Makefile or sample inputs.</p>
